@@ -36,6 +36,7 @@ responses:
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   - text: soy un bot
+  - text: soy un bot 2
 actions: []
 forms: {}
 e2e_actions: []
