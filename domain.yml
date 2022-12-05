@@ -19,24 +19,113 @@ intents:
     use_entities: true
 - bot_challenge:
     use_entities: true
-entities: []
+- requisitos_matricula_segundo_ciclo:
+    use_entities: true
+- requisitos_matricula_estudiantes_extranjeros:
+    use_entities: true
+- matricula_internado_rotativo:
+    use_entities: true
+- registro_matricula_primer_ciclo:
+    use_entities: true
+- registro_matricula_especial:
+    use_entities: true
+- registro_matricula_extraordinaria:
+    use_entities: true
+- tipos_de_matriculas:
+    use_entities: true
+- condicion_estudiante:
+    use_entities: true
+- motivo_anulacion_matricula:
+    use_entities: true
+- requisitos_segunda_carrera:
+    use_entities: true
+- matricula_ordinaria:
+    use_entities: true
+- concepto_matricula:
+    use_entities: true
+- matricula_especial:
+    use_entities: true
+- requisitos_matricula_primer_ciclo:
+    use_entities: true
+- como_anular_matricula:
+    use_entities: true
+- matricula_extraordinaria:
+    use_entities: true
+- anulacion_matricula:
+    use_entities: true
+- registro_matricula_ordinaria:
+    use_entities: true
+- costos:
+    use_entities: true
+- ask_question:
+    use_entities: true
+- bert:
+    use_entities: true
+entities:
+- undefined///
 slots: {}
 responses:
   utter_greet:
-  - text: Hey! How are you?
+  - text: ¡Hola! ¿Cómo estás??
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
+    text: 'Aquí tienes algo para animarte:'
   utter_did_that_help:
-  - text: Did that help you?
+  - text: Te ha servido de algo?
   utter_happy:
-  - text: Great, carry on!
+  - text: Genial, ¡sigue!
   utter_goodbye:
   - text: Bye
   utter_iamabot:
-  - text: I am a bot, powered by Rasa.
-  - text: soy un bot
-  - text: soy un bot 2
-actions: []
+  - text: Soy un bot, impulsado por Rasa.
+  utter_concepto_matricula:
+  - text: La matrícula es el acto de carácter académico-administrativo, mediante el cual una persona adquiere la condición de estudiante, a través del registro de las asignaturas, cursos o sus equivalentes, en un período académico determinado y conforme a los procedimientos establecidos por la institución
+  utter_condicion_estudiante:
+  - text: La condición de estudiante se mantendrá hasta el inicio del nuevo período académico ordinario o hasta su titulación.
+  utter_matricula_ordinaria:
+  - text: La matrícula ordinaria es aquella que se realiza en el plazo establecido por la Universidad Nacional de Loja, en el calendario académico-administrativo para el proceso de matriculación
+  utter_registro_matricula_ordinaria:
+  - text: La matrícula ordinaria en ningún caso podrá ser posterior al inicio de las actividades académicas
+  utter_matricula_extraordinaria:
+  - text: La matrícula extraordinaria es aquella que se realiza en el plazo máximo de 15 días posteriores a la culminación del período de matrícula ordinaria
+  utter_registro_matricula_extraordinaria:
+  - text: La matrícula extraordinaria se realiza en el plazo máximo de 15 días posteriores a la culminación del período de matrícula ordinaria
+  utter_matricula_especial:
+  - text: La matrícula especial es aquella que, en casos individuales excepcionales, se otorga al estudiante, previa la autorización del Decano/a de la Facultad o Director/a de la Unidad de Estudio a Distancia, para quien, por circunstancias de caso fortuito o fuerza mayor, debidamente documentadas, no se haya matriculado de manera ordinaria o extraordinaria
+  utter_registro_matricula_especial:
+  - text: La matrícula especial se podrá realizar hasta dentro de los quince (15) días plazo, posteriores a la culminación del período de matrícula extraordinaria y se concederá únicamente para cursar períodos académicos ordinarios.
+  utter_matricula_internado_rotativo:
+  - text: Las carreras del campo específico de la salud que requieran internado rotativo, la matrícula correspondiente a esta etapa de formación, será anual.
+  utter_anulacion_matricula:
+  - text: La Universidad Nacional de Loja podrá, de oficio o a petición de parte, declarar nula una matrícula cuando ésta haya sido realizada violando la ley y la normativa aplicable.
+  utter_motivo_anulacion_matricula:
+  - text: En caso de enfermedad grave y/o calamidad doméstica debidamente comprobada, el Decano/a de Facultad o el Director/a de la Unidad de Educación a Distancia, dejará sin efecto la matrícula del estudiante, por una sola vez, siempre y cuando no hubiere reprobado el ciclo académico o alguna (s) asignatura (s).
+  utter_como_anular_matricula:
+  - text: El que se deje sin efecto la matrícula deberá ser solicitado por el estudiante de carrera o programa al Decano/a de Facultad o Director/a de la Unidad de Educación a Distancia hasta una semana después de culminadas las actividades del período académico ordinario.
+  utter_registro_matricula_primer_ciclo:
+  - text: Para matricularse en el primer ciclo de carrera los estudiantes deberán registrar su matrícula en el Sistema de Gestión Académico utilizando las credenciales concedidas por la universidad. Además de una solicitud de matrícula que tiene que estar dirigida al decano de facultad o al director de educación a distancia.
+  utter_requisitos_matricula_primer_ciclo:
+  - text: Título de bachiller o su equivalente. Se aceptarán títulos de bachiller obtenidos en el extranjero, reconocidos por el Ministerio de Educación; haber cumplido los requisitos en el Sistema Nacional de Nivelación y Admisión, SNNA o en el sistema de admisión y nivelación institucional; fotocopia a color de documentos personales; y, una fotografía tamaño carné.
+  utter_requisitos_segunda_carrera:
+  - text: Se entregará la copia del título profesional y el documento de pago de derechos, si legalmente corresponde por efecto de pérdida de la gratuidad.
+  utter_requisitos_matricula_segundo_ciclo:
+  - text: Aprobar el 60% del total de asignaturas, créditos u horas del período académico ordinario (ciclo) anterior; registro de matrícula en el Sistema de Gestión Académico Estudiantes y, pago de derechos, si legalmente corresponde por efecto de pérdida parcial o total de la gratuidad.
+  utter_requisitos_matricula_estudiantes_extranjeros:
+  - text: Solicitud de matrícula dirigida al Decano/a de Facultad o al Director/a de la Unidad de Educación a Distancia ;visa de estudios vigente; título de bachiller, reconocido por el Ministerio de Educación y el Ministerio de Relaciones Exteriores y Movilidad Humana; y, copia de documentos personales.
+  utter_tipos_de_matriculas:
+  - buttons:
+    - payload: '¿Que es la matrícula ordinaria?   '
+      title: Matrícula ordinaria
+    - payload: '¿Que es la matrícula extraordinaria?  '
+      title: Matricula extraordinaria
+    - payload: ¿Que es la matrícula especial?
+      title: Matricula especial
+    text: 'En la Universidad Nacional de Loja, se establecen los siguientes tipos de matrícula:'
+  utter_costos:
+  - text: estos son los costos
+actions:
+- action_default_fallback
+- action_hello_world
+- call_bert
 forms: {}
 e2e_actions: []

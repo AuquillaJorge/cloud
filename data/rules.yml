@@ -11,3 +11,8 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: escribe bert busqueda 
+  steps:
+  - intent: bert
+  - action: call_bert

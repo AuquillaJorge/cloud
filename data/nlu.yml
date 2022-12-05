@@ -1,92 +1,307 @@
 version: "2.0"
-
 nlu:
+- intent: bert
+  examples: |
+    - bert
+    - BERT
+    - imprimer bert
+    - pregunta para bert
+    - pregunta bert
 - intent: greet
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-
+    - Hola
+    - hola
+    - buenos días
+    - buenas tardes
+    - como estas
+    - Hola.
+    - Vamos.
+    - Hola, amigo.
 - intent: goodbye
   examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-
+    - buenas por
+    - hasta luego
+    - buenas noches
+    - adiós
+    - que tengas un buen día
+    - nos vemos
+    - adiós, adiós
 - intent: affirm
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-
+    - sí
+    - efectivamente
+    - Por supuesto.
+    - Eso suena bien.
+    - correcto
 - intent: deny
   examples: |
     - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-
+    - nunca
+    - No me parece
+    - No me gusta eso.
+    - no hay manera
+    - en realidad no
 - intent: mood_great
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
+    - perfecto
+    - genial
+    - increíble
+    - sentirse como un rey
+    - maravilloso
+    - Me siento muy bien
+    - Estoy muy bien
+    - Soy increíble
+    - Voy a salvar el mundo
+    - súper entusiasmado
+    - extremadamente bien
+    - tan perfecto
+    - tan bueno
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
+    - mi día fue horrible
+    - Estoy triste
+    - No me siento muy bien
+    - Estoy decepcionado
+    - súper triste
+    - Estoy muy triste
+    - triste
+    - muy triste
+    - infeliz
+    - no es bueno
+    - no muy bien
+    - extremadamente triste
+    - tan triste
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - ¿eres un bot?
+    - ¿eres un humano?
+    - ¿estoy hablando con un bot?
+    - ¿estoy hablando con un humano?
+    - quien eres?
+    - quien eres ?
+    - que eres?
+    - hola quien eres ?
+- intent: concepto_matricula
+  examples: |
+    - ¿Qué es la matrícula?
+    - ¿Qué es la matriculación estudiantil?
+    - que es matricula?
+    - que es la matricula
+    - que me puedes decir de la matricula ?
+    - dime que es la matricula?
+    - puedes decirme que es la matricula ?
+    - dime algo sobre la matricula
+    - matricula
+    - Matricula
+    - que es la matricula ?
+    - concepto de matricula
+- intent: condicion_estudiante
+  examples: |
+    - ¿Cuánto se mantiene la condición del estudiante?
+    - ¿Cuánto dura la condición del estudiante?
+    - condicion del estudiante
+    - que es la condición del estudiante ?
+- intent: tipos_de_matriculas
+  examples: |
+    - ¿Cuáles son los tipos de matrícula?
+    - tipos de matriculas
+    - dime los tipos de matriculas
+    - cuantos tipos de matriculas  hay?
+    - cuales son los tipos de matriculas en la universidad ?
+    - cuales son los tipos de matriculas?
+    - cuales son los tipos de matriculas en la universidad?
+    - cuales son los tipos de matriculas establecidas en la universidad
+    - cuales son las matriculas en la universidad
+    - tipos de matricuals
+    - cuantos tipos de matriculas hay ?
+    - cuales son los tipos de matriculas ?
+    - tipos de matriculas ?
+    - que matriculas ofrece la universidad ?
+    - que tipos de matriculas hay en las universidad ?
+    - dime los tipos de matriculas ?
+    - registro de matricula
+    - cuantos tipos de matriculas hay en la universidad ?
+    - tipos de amtriculas en la universidad ?
+    - tipos de matriculas en las universidad
+    - cuando puedo matricularme ?
+    - que tipos de matriculas hay en la universidad ?
+    - dime los tipos de matriculas que hay en la universidad ?
+    - tipos de matriculas en la universidad
+- intent: matricula_ordinaria
+  examples: |
+    - ¿Que es la matrícula ordinaria?
+    - matricula_ordinaria
+    - matricula ordinaria
+    - dime que es la matricula ordinaria
+    - ¿Qué es la matrícula ordinaria?
+    - cuéntame sobre la matricula ordinaria
+    - dime lo que es la matricula ordinaria
+    - sabes que es la matricula ordinaria
+    - que es la matricula ordinaria
+    - sabes que es la matricula ordinaria ?
+    - Que es la matrícula ordinaria
+- intent: registro_matricula_ordinaria
+  examples: |
+    - ¿Hasta cuándo se puede registrar la matrícula ordinaria?
+    - hasta cuando puedo registrar mi matricula ordinaria ?
+    - cuando puedo registrar mi matricula ordinaria
+    - cuando son las matriculas ordinarias
+    - como registro mi matricula ordinaria ?
+    - cuando puedo registrar mi matricula ordinaria ?
+    - cunado puedo registrar mi matricula ordinaria ?
+    - como registros mi matricula ordinaria ?
+- intent: matricula_extraordinaria
+  examples: |
+    - ¿Que es la matrícula extraordinaria?
+    - que es la matrícula extraordinaria
+    - la matrícula extraordinaria
+    - cual es la matricula extraordinaria ?
+    - cuéntame sobre la matricula extraordinaria
+    - dime sobre la matricula extraordinaria?
+    - matricula extraordinaria
+    - que es la matricula extraordinaria?
+    - ¿Qué es la matrícula extraordinaria?
+    - que es la matricula extraordiaria ?
+    - que es la matricula extraordinaria
+- intent: registro_matricula_extraordinaria
+  examples: |
+    - ¿Hasta cuándo se puede registrar la matrícula extraordinaria?
+    - ¿Cuándo puedo registrar mi matrícula extraordinaria?
+    - como puedo registrar mi matrícula extraordinaria
+    - registro de la matrícula extraordinaria
+    - como registro mi matricula extraordinaria ?
+    - cuando puedo registrar mi matricula extraordinaria ?
+- intent: matricula_especial
+  examples: |
+    - ¿Que es la matrícula especial?
+    - dime sobre la matricula especial
+    - bajo que razones puedo tener derecho a la matricula especial
+    - cuando tengo derecho a la matricula especial
+    - en que casos tengo acceso a la matricula especial
+    - que sabes sobre la matricula especial
+    - para quienes esta disponible la matricula especial
+    - a quien aplica la matricula especial
+    - matricula especial
+    - que es la matricula especial
+    - que es la matricula especial ?
+- intent: registro_matricula_especial
+  examples: |
+    - ¿Hasta cuándo se puede registrar la matricula especial?
+    - en que momento puedo registrar mi matricula especial
+    - cuando puedo registrar mi matricula especial
+    - hasta cuando puedo registrar mi matricula especial
+    - registrar mi matricula especial
+    - como registro mi matricula especial
+    - registro matricula especial
+    - como puedo registrar mi matricula especial
+    - cuando puedo registrar mi matricula especial ?
+    - cuando puedo registrar mi matricula especial?
+    - registro de la matricula especial
+- intent: matricula_internado_rotativo
+  examples: |
+    - ¿Las carreras de salud cada cuando se pueden matricular?
+    - ¿Las carreras de salud se pueden matricular?
+    - ¿Cuándo se matriculan las carreras de salud?
+    - ¿Cada cuanto se matriculan las carreras de medicina?
+    - registro de las matriculas de medicina
+    - si estoy en la carrera de medicina cunado tengo que matricularme
+    - soy de medicina cuando puedo registrar mi matricula
+    - cuando registro mi matricula de salud
+    - cuando registro mi marticula de medicina
+    - cuando registro mi matricula de internado rotativo ?
+- intent: anulacion_matricula
+  examples: |
+    - anular matricula
+    - anulacion de la matricula
+    - concepto anulacion matricula
+- intent: motivo_anulacion_matricula
+  examples: |
+    - ¿Qué razones se utilizan para anular la matrícula?
+    - ¿En qué casos se puede anular una matrícula?
+    - ¿Cuáles son los motivos para poder anular mi matrícula?
+- intent: como_anular_matricula
+  examples: |
+    - ¿Cómo puedo anular mi matricula?
+    - ¿Quién puede anular mi matricula?
+    - ¿Hasta cuándo se puede anular mi matricula?
+    - como puedo anular mi matricula ?
+    - con quien tengo que hablar para anular mi matricula ?
+    - quien puede anular mi matricula
+    - con que autoridad tengo que hablar para anular mi matricula ?
+    - el decano es quien anula mi matricula ?
+    - que debo hacer para anular mi matricula
+    - con quien debo anular mi matricula
+    - como puedo anular mi matricula
+    - quiero anular mi matricula
+    - anular matricula
+    - puedo anular mi matricula si reprobare alguna asignatura ?
+    - puedo anular mi matricula si reprobé alguna materia
+    - si quiero anular mi matricula tengo que justificarlo ?
+    - en que casos puedo anular mi matricula ?
+    - que razones puedo anular mi matricula en caso de enfermedad ?
+    - como puedo dar de baja mi matricula
+    - como dar de baja mi matricula ?
+    - como anulo mi matricula ?
+    - requisitos para anular mi matricula
+- intent: registro_matricula_primer_ciclo
+  examples: |
+    - ¿Como puedo matricularme en el primer ciclo?
+    - como me registro en primer ciclo
+    - quien me da las credenciales para registrarme en primer ciclo ?
+    - que necesito para registrarme en primer ciclo ?
+    - cuales son los requisitos mara registrarme en primer ciclo
+    - que necesito para registrarme en primer ciclo
+    - como me puedo matricular en primer modulo ?
+    - primer ciclo
+    - como me puedo registrar en primer ciclo
+    - como registro mi matricula de primer ciclo
+    - registro de matricula primer ciclo
+- intent: requisitos_matricula_primer_ciclo
+  examples: |
+    - ¿Cuáles son los requisitos de matrícula para el primer ciclo?
+    - ¿Qué requisitos necesito para matricularse en primer ciclo?
+    - requisitos de primer ciclo
+    - que tengo que presentar para matricularme en primer ciclo
+    - que se necesita para matricularme en primer ciclo
+    - que requisitos necesito para matricularme en primer ciclo
+    - cuales son los requisitos para primer ciclo
+    - requisitos para primer ciclo
+    - requisitos para primer modulo
+    - cuales son los requisitos para primer ciclo ?
+    - cuales son los requisitos para primer ciclo?
+- intent: requisitos_segunda_carrera
+  examples: |
+    - ¿Cuáles son los requisitos de matrícula para la segunda carrera?
+    - ¿Qué requisitos necesito para matricularme en otra carrera?
+    - como me registro en una segunda carrera
+    - que debo presentar para matricularme en una segunda carrera
+    - segunda carrera
+- intent: requisitos_matricula_segundo_ciclo
+  examples: |
+    - ¿Cuáles son los requisitos de matrícula para el segundo ciclo?
+    - que se necesita para matricularme en segundo ciclo
+    - que porcentaje tengo que aprobar para registrarme en segundo ciclo ?
+    - cuales son los requisitos para segundo ciclo ?
+    - que requisitos tengo que presentar para segundo ciclo ?
+    - que requisitos necesito para segundo modulo ?
+    - segundo ciclo
+    - segundo modulo
+    - cuales son los requisitos para segundo ciclo
+    - cuales son los requisitos para sengundo ciclo ?
+    - requisitos para segundo ciclo
+    - requisitos matricula segundo ciclo
+    - matricula segundo ciclo
+    - como registro mi matricula de segundo ciclo
+    - que requisitos se necesitan para segundo ciclo ?
+    - cuales son los requisitos para segundo ciclo?
+    - requisitos para el segundo ciclo
+    - los requisitos para segundo ciclo?
+    - requisitos segundo ciclo
+    - requisitos par segundo ciclo ?
+- intent: requisitos_matricula_estudiantes_extranjeros
+  examples: |
+    - ¿Cuáles son los requisitos de matrícula para el primer ciclo de estudiantes extranjeros?
+    - ¿Cuáles son los requisitos de matrícula para el segundo ciclo de estudiantes extranjeros?
+    - ¿Cuáles son los requisitos de matrícula si soy extranjero?
+    - matricula para estudiantes extranjeros
+    - matriculación para estudiantes extranjeros

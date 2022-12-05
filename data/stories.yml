@@ -1,14 +1,11 @@
 version: "2.0"
-
 stories:
-
 - story: happy path
   steps:
   - intent: greet
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
-
 - story: sad path 1
   steps:
   - intent: greet
@@ -18,7 +15,6 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
-
 - story: sad path 2
   steps:
   - intent: greet
@@ -28,3 +24,75 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+- story: concepto_matricula
+  steps:
+  - intent: concepto_matricula
+  - action: utter_concepto_matricula
+- story: condicion_estudiante
+  steps:
+  - intent: condicion_estudiante
+  - action: utter_condicion_estudiante
+- story: matricula_ordinaria
+  steps:
+  - intent: matricula_ordinaria
+  - action: utter_matricula_ordinaria
+- story: registro_matricula_ordinaria
+  steps:
+  - intent: registro_matricula_ordinaria
+  - action: utter_registro_matricula_ordinaria
+- story: matricula_extraordinaria
+  steps:
+  - intent: matricula_extraordinaria
+  - action: utter_matricula_extraordinaria
+- story: registro_matricula_extraordinaria
+  steps:
+  - intent: registro_matricula_extraordinaria
+  - action: utter_registro_matricula_extraordinaria
+- story: matricula_especial
+  steps:
+  - intent: matricula_especial
+  - action: utter_matricula_especial
+- story: registro_matricula_especial
+  steps:
+  - intent: registro_matricula_especial
+  - action: utter_registro_matricula_especial
+- story: matricula_internado_rotativo
+  steps:
+  - intent: matricula_internado_rotativo
+  - action: utter_matricula_internado_rotativo
+- story: anulacion_matricula
+  steps:
+  - intent: anulacion_matricula
+  - action: utter_anulacion_matricula
+- story: motivo_anulacion_matricula
+  steps:
+  - intent: motivo_anulacion_matricula
+  - action: utter_motivo_anulacion_matricula
+- story: como_anular_matricula
+  steps:
+  - intent: como_anular_matricula
+  - action: utter_como_anular_matricula
+- story: registro_matricula_primer_ciclo
+  steps:
+  - intent: registro_matricula_primer_ciclo
+  - action: utter_registro_matricula_primer_ciclo
+- story: requisitos_matricula_primer_ciclo
+  steps:
+  - intent: requisitos_matricula_primer_ciclo
+  - action: utter_requisitos_matricula_primer_ciclo
+- story: requisitos_segunda_carrera
+  steps:
+  - intent: requisitos_segunda_carrera
+  - action: utter_requisitos_segunda_carrera
+- story: requisitos_matricula_segundo_ciclo
+  steps:
+  - intent: requisitos_matricula_segundo_ciclo
+  - action: utter_requisitos_matricula_segundo_ciclo
+- story: requisitos_matricula_estudiantes_extranjeros
+  steps:
+  - intent: requisitos_matricula_estudiantes_extranjeros
+  - action: utter_requisitos_matricula_estudiantes_extranjeros
+- story: tipos_de_matriculas
+  steps:
+  - intent: tipos_de_matriculas
+  - action: utter_tipos_de_matriculas
